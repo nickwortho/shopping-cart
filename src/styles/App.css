@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../assets/fonts/MonaSans-VariableFont_wdth,wght.ttf') format('truetype-variations'),
+        url('../assets/fonts/MonaSans-VariableFont_wdth,wght.ttf') format('ttf');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../assets/fonts/MonaSans-Italic-VariableFont_wdth,wght.ttf') format('truetype-variations'),
+        url('../assets/fonts/MonaSans-Italic-VariableFont_wdth,wght.ttf') format('ttf');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --background-color: #0d1117;
+    --text-color: #f0f6fc;
+}
+
+body {
+    font-family: 'MonaSans', sans-serif;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
