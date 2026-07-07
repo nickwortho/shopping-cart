@@ -1,8 +1,10 @@
 import './styles/App.css'
+import HomePage from './components/HomePage';
 
 const App = () => {
   return (
     <>
+      <HomePage />
     </>
   );
 };

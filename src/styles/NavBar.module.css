@@ -1,0 +1,43 @@
+.navBar {
+    padding: 10px;
+
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+    align-items: center;
+
+    border-bottom: 1px solid #f0f6fc;
+}
+
+.navBar div:nth-child(1) {
+    display: flex;
+    gap: 1rem;
+}
+
+div:nth-child(2) {
+    text-align: center;
+}
+
+div:nth-child(3) {
+    display: flex;
+    gap: 1rem;
+
+    justify-content: right;
+}
+
+button {
+    font-family: 'MonaSans';
+    color: var(--text-color);
+
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+button:hover {
+    border-radius: 5px;
+    border-color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}

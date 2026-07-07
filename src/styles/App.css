@@ -16,6 +16,16 @@
     font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
 :root {
     --background-color: #0d1117;
     --text-color: #f0f6fc;
