@@ -38,3 +38,26 @@ body {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
+
+main {
+    margin: 1rem;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+input {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
