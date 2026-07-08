@@ -14,11 +14,14 @@ const ShopPage = () => {
             </header>
             <main>
                 <h2>Shop</h2>
-                <ItemGroup style={styles.itemGroup} name='Category 1'>
-                    <ShopCard />
-                    <ShopCard />
-                    <ShopCard />
-                    <ShopCard />
+                <ItemGroup style={styles.itemGroup} name=''>
+                    {products.map(product => {
+                        return <ShopCard
+                            key={product.id}
+                            id={product.id}
+                            name={product.title}
+                            image={product.image} />
+                    })}
                 </ItemGroup>
             </main>
         </>

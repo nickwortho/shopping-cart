@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Card from './Card';
 import styles from '../styles/Card.module.css';
 
-const ShopCard = ({ item = { id: crypto.randomUUID(), name: 'blank item' } }) => {
+const ShopCard = ({ id = crypto.randomUUID(), name = 'blank item', image = 'no image' }) => {
     const [qtyValue, setQtyValue] = useState(0);
 
 
@@ -20,10 +20,13 @@ const ShopCard = ({ item = { id: crypto.randomUUID(), name: 'blank item' } }) =>
     }
 
     return (
-        <Card className={styles.card}>
+        <Card className={styles.card}
+            id={id}
+            name={name}
+            image={image}>
             <div className={styles.qtyGroup}>
-                <label htmlFor={item.id}>Qty:</label>
-                <input type='number' id={item.id} name='quantity'
+                <label htmlFor={id}>Qty:</label>
+                <input type='number' id={id} name='quantity'
                     value={qtyValue} onChange={(e) => handleQuantityInput(e)}></input>
                 <div className={styles.qtyBtns}>
                     <button onClick={handleQuantityIncrement}>+</button>

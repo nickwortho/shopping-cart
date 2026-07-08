@@ -16,8 +16,6 @@ const App = () => {
     })();
   }, []);
 
-  console.log(products);
-
   return (
     <>
       <Outlet context={products} />
