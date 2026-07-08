@@ -1,6 +1,8 @@
-import NavBar from "./NavBar";
+import { useOutletContext } from 'react-router';
+import NavBar from './NavBar';
 
 const HomePage = () => {
+    const products = useOutletContext();
     return (
         <>
             <header>
