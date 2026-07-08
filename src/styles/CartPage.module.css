@@ -1,0 +1,7 @@
+.itemGroup {
+    padding: 1rem;
+
+    display: grid;
+    grid-auto-rows: 5rem;
+    gap: 1rem;
+}

@@ -1,4 +1,7 @@
-import NavBar from "./NavBar";
+import ItemGroup from './ItemGroup';
+import NavBar from './NavBar';
+import styles from '../styles/CartPage.module.css'
+import CartCard from './CartCard';
 
 const CartPage = () => {
     return (
@@ -8,6 +11,11 @@ const CartPage = () => {
             </header>
             <main>
                 <h2>Cart</h2>
+                <ItemGroup style={styles.itemGroup} name='' >
+                    <CartCard />
+                    <CartCard />
+                    <CartCard />
+                </ItemGroup>
             </main>
         </>
     );
