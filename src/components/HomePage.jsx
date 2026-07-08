@@ -3,8 +3,12 @@ import NavBar from "./NavBar";
 const HomePage = () => {
     return (
         <>
-            <NavBar />
-            <h1>Millard's Mallards</h1>
+            <header>
+                <NavBar />
+            </header>
+            <main>
+                <h2>Millard's Mallards</h2>
+            </main>
         </>
     );
 }

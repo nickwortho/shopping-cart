@@ -13,18 +13,18 @@
     gap: 1rem;
 }
 
-div:nth-child(2) {
+.navBar div:nth-child(2) {
     text-align: center;
 }
 
-div:nth-child(3) {
+.navBar div:nth-child(3) {
     display: flex;
     gap: 1rem;
 
     justify-content: right;
 }
 
-button {
+.navBar button {
     font-family: 'MonaSans';
     color: var(--text-color);
 
@@ -32,12 +32,12 @@ button {
     background-color: rgba(0, 0, 0, 0.0);
 }
 
-button:hover {
+.navBar button:hover {
     border-radius: 5px;
     border-color: var(--text-color);
 }
 
-a {
+.navBar a {
     color: var(--text-color);
     text-decoration: none;
 }

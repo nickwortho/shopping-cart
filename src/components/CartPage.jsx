@@ -3,8 +3,12 @@ import NavBar from "./NavBar";
 const CartPage = () => {
     return (
         <>
-            <NavBar />
-            <p>Cart</p>
+            <header>
+                <NavBar />
+            </header>
+            <main>
+                <h2>Cart</h2>
+            </main>
         </>
     );
 }

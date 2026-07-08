@@ -13,7 +13,7 @@ const NavBar = () => {
                 </button>
             </div>
             <div>
-                <h2>Millard's Mallards</h2>
+                <h1>Millard's Mallards</h1>
             </div>
             <div>
                 <button>

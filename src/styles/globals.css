@@ -27,13 +27,14 @@
 }
 
 :root {
-    --background-color: #0d1117;
+    --primary-color: #0d1117;
+    --secondary-color: #151b23;
     --text-color: #f0f6fc;
 }
 
 body {
     font-family: 'MonaSans', sans-serif;
 
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
 }
