@@ -15,13 +15,14 @@
 
 .navBar div:nth-child(2) {
     text-align: center;
+    white-space: nowrap;
 }
 
 .navBar div:nth-child(3) {
     display: flex;
-    gap: 1rem;
-
     justify-content: right;
+
+    align-items: center;
 }
 
 .navBar button {
@@ -35,4 +36,25 @@
 .navBar button:hover {
     border-radius: 5px;
     border-color: var(--text-color);
+}
+
+.navBar .cartQty {
+    height: 20px;
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: small;
+    font-weight: bold;
+
+    border-radius: 10px;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+.navBar .logo {
+    height: 30px;
+    fill: var(--text-color);
 }

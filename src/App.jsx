@@ -80,7 +80,7 @@ const App = () => {
       :
       (
         <>
-          <NavBar />
+          <NavBar cartQty={cartProducts.length} />
           <Outlet context={[products, addToCart, cartProducts, editCartQty]} />
           <Footer />
         </>
