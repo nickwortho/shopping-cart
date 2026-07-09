@@ -9,11 +9,11 @@ A small online storefront, where users can browse products, add items to a cart,
 
 ### Shop Page
 
-<img src="./docs/screenshots/shop-page.png" alt="Shop page showing product cards with quantity controls" width="800">
+<img style="border: 1px solid white" src="./docs/screenshots/shop-page.png" alt="Shop page showing product cards with quantity controls" width="800">
 
 ### Cart Page
 
-<img src="./docs/screenshots/cart-page.png" alt="Cart page showing selected products with editable quantities" width="800">
+<img style="border: 1px solid white" src="./docs/screenshots/cart-page.png" alt="Cart page showing selected products with editable quantities" width="800">
 
 ## Features
 
