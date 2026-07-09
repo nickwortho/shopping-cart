@@ -9,9 +9,6 @@ const ShopPage = () => {
 
     return (
         <>
-            <header>
-                <NavBar />
-            </header>
             <main>
                 <h2>Shop</h2>
                 <ItemGroup style={styles.itemGroup} name=''>

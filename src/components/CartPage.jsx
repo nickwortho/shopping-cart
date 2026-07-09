@@ -14,9 +14,6 @@ const CartPage = () => {
 
     return (
         <>
-            <header>
-                <NavBar />
-            </header>
             <main>
                 <h2>Cart</h2>
                 {cartProducts.length === 0
