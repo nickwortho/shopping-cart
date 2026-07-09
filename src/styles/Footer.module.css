@@ -1,9 +1,11 @@
 .footer {
     min-height: 50px;
+    padding: 0 1rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 
     font-size: 0.8rem;
 
@@ -11,7 +13,11 @@
     background-color: var(--secondary-color);
 }
 
-.footer>* {
+.footer * {
+    text-align: center;
+}
+
+.footer>div {
     display: flex;
     justify-content: center;
     flex-basis: 0;
