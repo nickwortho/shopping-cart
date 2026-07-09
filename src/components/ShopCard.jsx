@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { useOutletContext } from 'react-router';
 import Card from './Card';
 import styles from '../styles/Card.module.css';
 
 const ShopCard = ({ id = crypto.randomUUID(), name = 'blank item', image = 'no image' }) => {
     const [qtyValue, setQtyValue] = useState(0);
+    const [products, addToCart, cartProducts, editCartQty] = useOutletContext();
 
 
     function handleQuantityIncrement() {
@@ -19,6 +21,11 @@ const ShopCard = ({ id = crypto.randomUUID(), name = 'blank item', image = 'no i
         setQtyValue(Number(e.target.value));
     }
 
+    function handleAddToCart() {
+        addToCart({ id, qtyValue });
+        setQtyValue(0);
+    }
+
     return (
         <Card className={styles.card}
             id={id}
@@ -32,7 +39,7 @@ const ShopCard = ({ id = crypto.randomUUID(), name = 'blank item', image = 'no i
                     <button onClick={handleQuantityIncrement}>+</button>
                     <button onClick={handleQuantityDecrement}>-</button>
                 </div>
-                <button>Add</button>
+                <button onClick={handleAddToCart}>Add</button>
             </div>
         </Card>
     );

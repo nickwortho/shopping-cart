@@ -5,7 +5,7 @@ import ShopCard from './ShopCard';
 import styles from '../styles/ShopPage.module.css';
 
 const ShopPage = () => {
-    const products = useOutletContext();
+    const [products, addToCart, cartProducts, editCartQty] = useOutletContext();
 
     return (
         <>
