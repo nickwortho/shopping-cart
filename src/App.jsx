@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router';
 import fetchProducts from './products';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -81,6 +82,7 @@ const App = () => {
         <>
           <NavBar />
           <Outlet context={[products, addToCart, cartProducts, editCartQty]} />
+          <Footer />
         </>
       )
     ;

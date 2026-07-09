@@ -5,7 +5,7 @@
     grid-template: auto / 1fr 1fr 1fr;
     align-items: center;
 
-    border-bottom: 1px solid #f0f6fc;
+    border-bottom: 1px solid var(--text-color);
 }
 
 .navBar div:nth-child(1) {
@@ -35,9 +35,4 @@
 .navBar button:hover {
     border-radius: 5px;
     border-color: var(--text-color);
-}
-
-.navBar a {
-    color: var(--text-color);
-    text-decoration: none;
 }

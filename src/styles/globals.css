@@ -39,18 +39,33 @@ body {
     color: var(--text-color);
 }
 
+#root {
+    min-height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     margin: 1rem;
+
+    flex: 1;
 }
 
 hr {
     margin: 1rem 0;
 }
 
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 input {
     outline: none;
 }
 
+/* Remove default arrow incrementer on number input fields */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;

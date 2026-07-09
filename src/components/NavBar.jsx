@@ -24,7 +24,6 @@ const NavBar = () => {
                         <Link to='/cart'>Cart</Link>
                     </button>
                 </div>
-
             </nav >
         </header>
     );
